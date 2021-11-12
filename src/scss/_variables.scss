@@ -1,0 +1,65 @@
+//Mixins import at the bottom of the file.
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$member-footer-font: 'Open Sans', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$app-font-family: din-2014, sans-serif;
+
+$bebas-neue: 'Bebas Neue', cursive;
+$open-sans: 'Open Sans', sans-serif;
+
+// Theme Colors
+$theme-cyan-process: #00AEEF;
+$theme-blue-pigment: #2E3192;
+$theme-light-grey: #CCCCCC;
+$theme-input-grey: #EAEAEA;
+$theme-violet-blue-crayola: #6467CE;
+
+// Colors
+$blue: #1F3C71;
+$indigo: #505ca3;
+$purple: #7d51bd;
+$pink: #b34f71;
+$red: #bf2c28;
+$orange: #ee9622;
+$yellow: #ffed4a;
+$green: #A8C632;
+$teal: #3f9d94;
+$cyan: #578fbd;
+
+$primary: $blue;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+//Spacing
+$header-space-lg: 97px;
+$header-space: 83px;
+$mobile-nav-space: 180px;
+
+// Options
+$enable-caret:                                true;
+$enable-rounded:                              true;
+$enable-shadows:                              false;
+$enable-gradients:                            false;
+$enable-transitions:                          true;
+$enable-prefers-reduced-motion-media-query:   true;
+$enable-grid-classes:                         true;
+$enable-pointer-cursor-for-buttons:           true;
+$enable-print-styles:                         true;
+$enable-responsive-font-sizes:                false;
+$enable-validation-icons:                     true;
+$enable-deprecation-messages:                 true;
+
+@import "mixins";

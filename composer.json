@@ -1,0 +1,17 @@
+{
+    "name": "ikon/capabl.io",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Chris Stage",
+            "email": "cj.stage@bmediallc.com"
+        }
+    ],
+    "require": {
+        "symfony/debug": "^4.3"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3"
+    }
+}

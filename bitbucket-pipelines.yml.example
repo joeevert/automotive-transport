@@ -1,0 +1,29 @@
+image: node:11.12.0
+pipelines:
+  branches:
+    production:
+      - step:
+          script:
+            - cd $BITBUCKET_CLONE_DIR
+            - npm install
+            - npm run production
+            - rm -rf src
+            - cd wp-content/themes/capabl/dist
+            - rm .gitignore
+            - git add --all
+            - git commit -m 'Pipeline Build'
+            - git push --force git@git.wpengine.com:production/YOURINSTALLHERE.git production
+            - echo "Completed"
+    development:
+      - step:
+          script:
+            - cd $BITBUCKET_CLONE_DIR
+            - npm install
+            - npm run production
+            - rm -rf src
+            - cd wp-content/themes/capabl/dist
+            - rm .gitignore
+            - git add --all
+            - git commit -m 'Pipeline Build'
+            - git push --force git@git.wpengine.com:production/YOURINSTALLHERE.git development
+            - echo "Completed"

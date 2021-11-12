@@ -1,0 +1,20 @@
+version: '2'
+services:
+  wordpress:
+    image: wordpress
+    volumes:
+      - ".:/var/www/html"
+      - "./wp-content/plugins:/var/www/html/wp-content/plugins"
+      - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
+    ports:
+      - "9040:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST:
+      WORDPRESS_DB_USER:
+      WORDPRESS_DB_PASSWORD:
+      WORDPRESS_DB_NAME:
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME','http://localhost:9040');
+        define('WP_SITEURL','http://localhost:9040');
+        define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);

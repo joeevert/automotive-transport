@@ -1,0 +1,294 @@
+// NOTE:  This file works OPPOSITE of bootstrap breakpoints min-width rule.
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+
+  .capabl-footer {
+    .footer-nav-col {
+      flex-direction: column;
+      .footer-navbar {
+        padding: 2rem 0;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .color-card-row {
+    .elementor-container {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      .elementor-inner-column {
+        min-width: 33%;
+      }
+    }
+  }
+
+  #homepage-swiper {
+    .swiper-slide {
+      height: 450px;
+      .slide-h3 {
+        font-size: 2rem;
+      }
+      .slider-cta-container .capabl-btn__round {
+        font-size: 2.5rem;
+        padding: calc(1rem + 3px) 2rem 1rem;
+        width: 300px;
+      }
+    }
+  }
+
+  .capabl-footer {
+    .ot-footer {
+      .icon-row {
+        .logo-container {
+          .logo {
+            width: 10rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+
+  main {
+    margin-top: 110px;
+  }
+
+  .capabl-header {
+    .logo-container {
+      .logo {
+        height: 7rem;
+      }
+    }
+  }
+
+  .homepage-anchor-wrapper {
+    .homepage-anchor {
+      .elementor-menu-anchor {
+        top: -109px;
+      }
+    }
+  }
+
+  #instant-quote-container {
+    .iq-row {
+      flex-direction: column;
+    }
+  }
+
+  .ot-menu-anchor {
+    .elementor-menu-anchor {
+      top: -109px;
+    }
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  #instant-quote-container {
+    min-height: 320px;
+    #output {
+      #optionTable {
+        overflow-x: scroll;
+      }
+    }
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+
+  .capabl-header {
+    .main-nav-col {
+      justify-content: space-between;
+    }
+    .main-navbar {
+      #menu-primary-menu {
+        display: none;
+      }
+    }
+    .capabl-btn__round {
+      display: none;
+    }
+  }
+
+  .header-cart-icon__container {
+    position: absolute;
+    right: 1rem;
+  }
+
+  #mobile-menu-btn {
+    display: initial;
+  }
+
+  #mobile-menu {
+    display: initial;
+  }
+
+  #homepage-swiper {
+    .main-slide {
+      .swiper-slide__bg-img {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+      }
+    }
+  }
+
+  #iqProgressBar {
+    .iq-progress-bar-container {
+      .progress-step {
+        &__inner {
+          &::after {
+            display: none;
+          }
+          &.isActive {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .capabl-footer {
+    .ot-footer {
+      .nav-row {
+        .col-md-2 {
+          display: none;
+        }
+        .footer-btn-wrapper {
+          display: inline-block;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  #instant-quote-container {
+    .shipping-speed-options {
+      li {
+        label {
+          padding: 1.5rem 1rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .capabl-footer {
+    .ot-footer {
+      &__inner {
+        .nav-row {
+          .col-md {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    .copyright-row {
+      .col-md-6 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  #instant-quote-container {
+    min-height: 420px;
+    .shipping-speed-options {
+      flex-direction: column;
+      li {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .wpforms-container, div.wpforms-container-full {
+    .wpforms-field {
+      .wpforms-field-label {
+        max-width: 100%;
+      }
+      textarea.wpforms-field-medium {
+        max-width: 100%;
+      }
+    }
+    .wpforms-submit-container {
+      max-width: 100%;
+    }
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+
+  main {
+    margin-top: 89.5px;
+  }
+
+  .capabl-header {
+    .logo-container {
+      .logo {
+        width: 10rem;
+        height: auto;
+      }
+    }
+  }
+
+  #mobile-menu {
+    top: 89px;
+  }
+
+
+  .homepage-anchor-wrapper {
+    .homepage-anchor {
+      .elementor-menu-anchor {
+        top: -88px;
+      }
+    }
+  }
+
+  .ot-menu-anchor {
+    .elementor-menu-anchor {
+      top: -88px;
+    }
+  }
+
+  .color-card-row {
+    .elementor-container {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      .elementor-inner-column {
+        min-width: 75%;
+      }
+    }
+  }
+
+  #homepage-swiper {
+    .main-slide {
+      .swiper-slide__bg-img {
+        text-align: center;
+        padding: 5rem 1rem 1rem;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,112 @@
+.capabl-footer {
+  .ot-footer {
+    background: bottom right / 25% no-repeat url('/wp-content/themes/capabl/images/footer-bg-img.png'), $theme-violet-blue-crayola;
+    //background: linear-gradient(0deg, rgba($theme-violet-blue-crayola ,.75) 0%, rgba($white ,1) 50%, rgba($white, 1) 100%);
+    &__inner {
+      padding: 2rem 0;
+      background: linear-gradient(0deg, rgba($theme-violet-blue-crayola, .5) 0%, rgba($white, .6) 50%, rgba($white, 1) 100%);
+
+      .container-fluid {
+        //max-width: 1500px;
+        //margin: 0 auto;
+      }
+    }
+
+    &__heading {
+      font-size: 3rem;
+      font-family: $bebas-neue;
+      color: $theme-cyan-process;
+      line-height: 1;
+      margin-bottom: .25rem;
+      a {
+        color: $theme-cyan-process;
+        transition: all .2s ease-in-out;
+        &:hover {
+          opacity: .7;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .nav-row {
+      margin: 3rem auto 0;
+    }
+
+    .footer-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .menu-item {
+        a {
+          font-family: $open-sans;
+          font-size: 1.6rem;
+          //text-transform: uppercase;
+          color: $theme-cyan-process;
+          padding: 0 0 1rem 0;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .icon-row {
+      margin: 3rem auto 0;
+      align-items: center;
+      .logo-container {
+        text-align: center;
+        background-color: $white;
+        padding: 1rem;
+        position: relative;
+        border-radius: 0 5rem 5rem 0;
+        .logo {
+          height: auto;
+          width: 15rem;
+        }
+      }
+
+      .social-media-container {
+        padding: 1rem 2rem;
+        .social-media-link {
+          width: 32px;
+          height: 32px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          border: 2px solid $white;
+          background-color: rgba($theme-violet-blue-crayola, .25);
+          margin: 0 .3rem;
+          transition: all .2s ease-in-out;
+
+          .social-media-icon {
+            color: $white;
+            font-size: 1.6rem;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .copyright-row {
+    align-items: center;
+    font-size: 1.2rem;
+    .ogs-col {
+      text-align: right;
+    }
+    .legal {
+      color: $black;
+      span {
+        display: inline-block;
+        padding: 1rem 0;
+      }
+      a {
+        display: inline-block;
+        padding: 0 0 1rem 0;
+      }
+    }
+  }
+
+}

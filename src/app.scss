@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Variables file also includes mixins.
+@import 'scss/variables';
+@import 'scss/base';
+@import 'scss/instant-quote';
+@import 'scss/header';
+@import 'scss/footer';
+@import 'scss/responsive';
+@import 'scss/typography';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Hamburgers
+@import '~hamburgers/_sass/hamburgers/hamburgers';
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/css/brands.css';
+
+// Swiper
+@import '~swiper/swiper-bundle.css';
+
+@import 'scss/woocommerce-styles';
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  font-size: 10px;
+  font-family: $bebas-neue;
+}
+
+.no-scroll {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}

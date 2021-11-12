@@ -1,0 +1,229 @@
+.capabl-btn__round {
+  display: inline-block;
+  font-family: $bebas-neue;
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background-color: $theme-cyan-process;
+  border: 3px solid $theme-cyan-process;
+  border-radius: 5rem;
+  padding: calc(1rem + 2px) 2rem 1rem;
+  transition: all .2s ease-in-out;
+  min-width: 18rem;
+  text-align: center;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    opacity: .7;
+  }
+  &-outline {
+    background-color: transparent;
+    &:hover {
+      background-color: $theme-cyan-process;
+    }
+  }
+}
+
+.ot-cta a {
+  min-width: 22rem;
+}
+
+.color-gray-900 {
+  color: $gray-900 !important;
+}
+
+.theme-cyan-process {
+  color: $theme-cyan-process !important;
+}
+
+.ot-page-title {
+  color: $theme-cyan-process;
+  font-family: $bebas-neue;
+  font-size: 5rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.capabl-color-card {
+  &__link {
+    display: block;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__container {
+    color: $white;
+    padding: 2rem 2rem;
+    min-height: 25rem;
+    margin: 0 1.5rem 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem 0 rgba($black, 25%);
+    transition: transform .2s ease;
+  }
+}
+
+.homepage-anchor-wrapper {
+  height: 0 !important;
+  visibility: hidden;
+  .homepage-anchor {
+    .elementor-menu-anchor {
+      display: block;
+      position: relative;
+      top: -139px;
+      visibility: hidden;
+    }
+  }
+}
+
+.ot-menu-anchor {
+  .elementor-menu-anchor {
+    display: block;
+    position: relative;
+    top: -139px;
+    visibility: hidden;
+  }
+}
+
+// Hompage Swiper
+#homepage-swiper {
+  .swiper-slide {
+    height: 550px;
+    &__bg-img {
+      height: 100%;
+      background-size: cover;
+      background-position: center bottom;
+      .slider-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .slider-icon {
+          max-height: 10rem;
+          padding: 1rem;
+        }
+        .slider-text {
+          display: inline-block;
+          padding: 1rem;
+          color: #ffffff !important;
+          padding: 1rem;
+        }
+      }
+      .slide-h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .slider-cta-container .capabl-btn__round {
+        font-size: 3.5rem;
+        padding: calc(2rem + 5px) 2rem 2rem;
+        width: 400px;
+      }
+    }
+  }
+  .main-slide {
+    .swiper-slide__bg-img {
+      padding: 10rem 1rem 1rem;
+    }
+  }
+}
+
+// Form Style Overrides
+div.wpforms-container-full {
+  .wpforms-form {
+    .wpforms-field-label {
+      color: $gray-900;
+    }
+    .wpforms-field-sublabel {
+      color: $gray-900;
+    }
+    .wpforms-field-label-inline {
+      color: $gray-900;
+    }
+  }
+}
+
+
+.wpforms-container, div.wpforms-container-full {
+  input[type='text'], input[type='email'], input[type='phone'], input[type='number'] {
+    background-color: $theme-light-grey !important;
+    border-radius: 5rem !important;
+    padding: .5rem 2rem !important;
+  }
+
+  textarea {
+    background-color: $theme-light-grey !important;
+    border-radius: 1rem !important;
+    padding: .5rem 2rem !important;
+    font-size: 2rem !important;
+  }
+
+  button[type='submit'] {
+    color: $white !important;
+    background-color: $theme-cyan-process !important;
+    border: 3px solid !important;
+    display: inline-block !important;
+    font-size: 2rem !important;
+    line-height: 1 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    border-radius: 5rem !important;
+    padding: calc(1rem + 2px) 2rem 1rem !important;
+    transition: all .2s ease-in-out !important;
+    min-width: 18rem !important;
+    text-align: center !important;
+  }
+
+  button[type='submit']:hover {
+    color: $white !important;
+    text-decoration: none !important;
+    opacity: .7 !important;
+  }
+
+  select {
+    background-color: $theme-light-grey !important;
+    border-radius: 5rem !important;
+    padding: .5rem 2rem !important;
+    //font-size: 2rem !important;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error404 {
+  h1 {
+    font-family: $bebas-neue;
+    font-size: 5rem;
+    color: $theme-cyan-process;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color:$gray-900;
+  }
+}
